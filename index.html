@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none';
+    connect-src 'none';
+    script-src 'self';
+    img-src 'self';
+    style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+    style-src-elem 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+    font-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://fonts.gstatic.com;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikdar's App</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div id="modeContainer">
+            <input id="pwdRad" type="radio" name="mode" value="mode"><label class="mode" for="pwdRad">Password</label>
+            <input id="durRad" type="radio" name="mode" value="mode"><label class="mode" for="durRad">Duration</label>
+        </div>
+        <h2 id="currentMode"></h2>
+        <div id="outputContainer">
+            <div id="result" class="leftfloat">
+            </div>
+            <button id="copyBtn" title="Copy Password" class="rightfloat">
+                <i class="fa-sharp fa-regular fa-copy"></i>
+            </button>
+        </div>
+        <div id="userinput">
+        </div>
+        <br><br>
+    </div>
+    <div id="btnContainer">
+        <button id="generateBtn"></button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
